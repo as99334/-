@@ -1,0 +1,44 @@
+:root{
+   /* font-size: 30px;*/
+}
+.size{
+    font-size: 24px;
+    font-size: 50%;
+    font-size: 0.5em;
+}
+.size p{
+    font-size: 0.5rem;
+}
+.weight h3{
+    font-weight: 600;
+    font-weight: normal;
+}
+.align{
+    text-align: right;
+}
+.height{
+    line-height: 30px;
+}
+.spacing{
+    word-spacing: 5px;
+    letter-spacing: -0.04em;
+}
+.transform h3{
+    text-transform: uppercase;
+}
+.decoration{
+    text-decoration: 4px solid black underline;
+    text-decoration-style:dashed; /*선의 종류*/
+    text-decoration-color:red; /*선의 색상*/
+    text-decoration-line:overline ; /*선의 위치*/
+    /*text-decoration-thickness: 1px; 선의 두깨, 표준 아님*/
+
+    color : red; /*키워드*/
+    color : rgb(0, 255, 0); /*red, green, blue 0~255 사이로 조합*/
+    color : #000000; /*rgb와 동일하지만 각 생을 16진법 숫사 두개로 표현*/
+    color : rgba(0,0,0,0.7) /*투명도 까지 지정*/
+;}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}

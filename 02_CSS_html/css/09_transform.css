@@ -1,0 +1,62 @@
+.container{
+    width: 500px;
+    border: 3px solid black;
+    padding: 10px;
+}
+.container .box {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    border: 3px solid red;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px;
+}
+.container.translate{
+    perspective: 500px;
+}
+.container.translate .box:nth-of-type(1):hover {
+    transform: translateX(20px);
+}
+.container.translate .box:nth-of-type(2):hover {
+    transform: translateY(-50px);
+}
+.container.translate .box:nth-of-type(3):hover {
+    transform: translate(20px,20px);
+}
+.container.rotate {
+    /* 3d 관점이 필요한 컨테이너 요소에 perspctive(관점) */
+    perspective: 1000px;
+}
+.container.rotate .box:hover{
+    transform: rotate(50deg);
+    transform-origin: top;
+}
+.container.rotate .x:hover{
+    transform: rotateX(45deg);
+}
+.container.rotate .y:hover{
+    transform: rotateY(45deg);
+}
+
+.container.sacle .box.x:hover{
+    transform:scaleX(90%);
+}
+.container.sacle .box.y:hover{
+    transform:scaleY(1.2);
+}
+.container.sacle .box.xy:hover{
+    transform:scaleY(1.2);
+}
+.container.skew .box.x:hover{
+    transform: skewX(-20deg);
+}
+.container.skew .box.y:hover{
+    transform: skewY(20deg);
+}
+.container.skew .box.xy:hover{
+    transform: skew(20deg, 40deg);
+}
+.container.complex .box:hover{
+    transform: translate(50px) scale(2) rotate(30deg) skewX(20deg);
+}

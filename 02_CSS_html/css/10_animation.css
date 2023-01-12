@@ -18,6 +18,7 @@ body{
     animation-iteration-count: infinite/*반복 횟수 무한*/;
     animation-direction:alternate-reverse ; /*애니매이션의 방향. reverse(반대로). alternate(애니메이션이 끝난 후 반대 방향으로 진행)*/
     animation-fill-mode: both; 
+    animation-play-state: running; /*재생 상태를 제어한다. running(기본값, 재생),*/
    
     /*
     forwards(끝난 후 애니매이션 끝프레임의 상태를 유자할 것인가)

@@ -13,19 +13,70 @@ li {
     list-style:none;
 }
 h1 {
-    position: absolute;
-    top:0;
-    left: 0;
-}
-h1 {
-    position: absolute;
-    left: 2px;
+    flex-basis: 100px;
     height: 40px;
     line-height: 40px;
 }
+
+body {
+    padding-top: 40px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    width: 100vw;
+    background-color: #fff;
+    padding: 0 20px;
+    top:0;
+    left: 0;
+
+    z-index: 100;
+    max-height: 40px;
+    overflow: hidden;
+    transition: max-height 0.4s;
+    
+}
+.sidewrpper {
+    display: flex;
+    align-items: center;
+    flex-basis: 100px;
+    height: 40px;
+    justify-content:flex-end;
+}
+.btnside {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width:30px;
+    height: 30px; 
+    border: 3px solid black;
+    border-radius: 50%;*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }  
+  .btnside:hover{
+    background-color: bisque;
+  }
+
+.btnside span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+}
+
+.btnside span:nth-child(2){
+    margin: 5px 0;
+}
+
 #gnbList{
     display: flex;
     justify-content: center;
+    
 }
 #gnbList li a{
     display: flex;
@@ -41,6 +92,7 @@ a{
 }
 #gnbList li a:hover {
     background-color:#eeeeee;
+   
 
 }
 main{
@@ -76,3 +128,31 @@ main{
     height: 110%;
     transform: scale(1.2);
 }
+
+/* 800px보다 작으면 #gnbList 안보이게
+@media (max-width:800px){
+    #gnbList {
+        display: none;
+
+    }
+}
+ */
+ /* 800px 보다 작으면  #gnbList 안보이게*/
+
+@media (max-width:800px){
+    #gnbList {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+    
+    }
+    
+    header:hover {
+        max-height: 200px;
+    }
+    header .btnside{
+        display:flex;
+    }
+}
+

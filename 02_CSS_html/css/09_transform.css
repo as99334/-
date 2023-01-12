@@ -39,6 +39,7 @@
     transform: rotateY(45deg);
 }
 
+
 .container.sacle .box.x:hover{
     transform:scaleX(90%);
 }

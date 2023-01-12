@@ -10,7 +10,7 @@
     flex-direction: row; /*아이템들이 나열되는 방향을 지정 한다. row(기본값,행방향), column (열방향)*/
     justify-content: flex-start; /*메인축에 대한 아이템 나열 방법*/
     align-items: flex-start; /*교차 축에 대한 아이템 나열 방법*/
-    flex-wrap: nowrap; /*아이템들이 너비에 합이 컨네이너  커졌을 때 줄바꿈을 할 것인가 지정*/  
+    flex-wrap: nowrap; /*아이템들이 크기 합이 컨네이너  커졌을 때 줄바꿈을 할 것인가 지정*/  
 }
 .item{
     display: flex;
@@ -20,7 +20,7 @@
     background-color: lightcoral;
     border: 3px solid yellow;
 
-    flex-basis: 1000px; /*최소 너비이지 기준값 기본값 auto*/
+    flex-basis: 1000px; /*최소 너비이지 기준값. 기본값 auto*/
 }
 .item:nth-child(1){
     flex-shrink: 3; /*공간이 부족할때 아이템을 줄이는 비율 기본값 1*/

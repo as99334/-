@@ -235,6 +235,14 @@
           alert("체인지 박스 클릭");
         }
       });
+
+      let checkInput = document.querySelector(".changBox input");
+
+      checkInput.addEventListener("keydown", function(e)) {
+        if (e.key === "Enter") {
+            item.style.backgroundColor = e.target.value;
+        }
+      }
     </script>
   </body>
 </html>

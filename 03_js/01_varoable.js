@@ -30,7 +30,7 @@ console.log(age);
 
 // 변수의 값 할당
 age = 30;
-console.log("age:".age);
+console.log("age:",age);
 age = 40;
 console.log("age",age);
 
@@ -64,3 +64,45 @@ console.log(num01, num02);
 //var user_list = []; 스네이크 케이스 띄어쓰기 부분_(언더바)로 구분한다.
 //var UseList = []; 카멜 케이스와 동일 하지만 대문자로 시작한다. 주로 생성자의 이름에 사용된다.
 
+
+/* 
+    var를 쓰면 안되는 이유
+        1) 뱐수 호이스팅이 일어난다.
+        2) 중복 선언이 가능하다.
+        3) 함수 레벨 스코프만 지원하고 블록 레벨 스코프 지원하지 않는다.
+*/
+console.log(a); //변수 호이스팅 발생. undefined 출력
+var a = 10; // 변수 호이스팅 발생. undefiend 출력
+var a = 100;
+console.log(a); //var 키워드는 중복 선언을  해도 오류 발생
+
+//let a = 0; let 키워드는 중복선언하면 오류가 발생
+
+/* console.log (b); //호이스팅은 일어나나 TDZ로 인해 오류 발생
+let b = 10; */
+
+console.log(square(3)); //함수 호이스팅 발생 square 함수 선언문으로 작성했긴 때문에 실행도 가능하다.
+function square(num){
+    return num * num;
+}
+/* 
+    기명 힘수와 익명 함수
+
+    기명 힘수, 힘수 선언문
+        -이름이 있는 함수
+        - 함수 호이스팅이 일어난다
+    
+    익명함수 , 함수 표면식
+        - 이름이 없는 함수
+        - 함수 호이스팅이 일어나지 않는다.
+        - JS에서 함수느 값으로 취급 한다 => 변수에 담긴다.
+        - 다른 함수의 인자로 전달되는 함수 (콜백 함수)에 주로 사용한다.
+*/
+foo(); //foo 함수는 선언문으로 작성했기 때문에 호이스팅 발생
+function foo() {
+    console.log ("foo 함수 실행");
+}
+let bar =function () {
+    console.log("bar 함수 실행");
+};
+bar();

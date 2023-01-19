@@ -9,7 +9,7 @@ console.log(5+2);
 console.log(10-1);
 console.log(20*3);
 console.log(20/4);
-console.log(20%3); //나머지 연산자
+console.log(20 %3); //나머지 연산자
 console.log((20-3)/3); //사칙 연산
 
 // 단항 연산자 :1개의 피 연산자에 산술을 적용한다. 
@@ -52,8 +52,8 @@ console.log(1 == "1" ) //동등 연산자를 사용하면 숫자 1과 문자열 
 console.log(1 == true); // 동등연산자는 암묵적 형 변환을 한다.
 
 //일치 연산자 :값과 테이터 타입 비교
-console.log( 1 === "1");
-console.log (1 === true);
+console.log( 1 === "1"); //false
+console.log (1 === true); //false
 
 // 부동등, 불일치 => 동등, 일치의 반대
 console.log(1 != "1"); //두 값이 같지 않은지
@@ -78,7 +78,7 @@ console.log(!(num04 <10)); // not true 이기 때문에 false
 
 //문자열 연결 연산자 :좌항과 우항의 문자열 연결
 var str ="안녕하세요" +" 황보 석입니다."
-console.log(str);
+console.log(str); //"안녕하세요 황보 석 입니다."
 age = 31;
 var str02 ="저는" + age + "세입니다."; // 숫자 + 문자열을 사용하면 연결 연산자로 동작한다.
 console.log(str02);

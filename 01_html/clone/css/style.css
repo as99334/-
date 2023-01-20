@@ -1,0 +1,40 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: speedeek;
+  font-weight: 700;
+}
+
+header {
+  background-color: #fff;
+  position: relative;
+  z-index: 10000;
+}
+header .headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 140px;
+}
+header #gnbList {
+  display: flex;
+  height: 141px;
+}
+header::after {
+  display: none;
+  content: "";
+  height: 300px;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+}
+header:hover::after {
+  display: block;
+  border-top: 1px solid #ccc;
+}/*# sourceMappingURL=style.css.map */

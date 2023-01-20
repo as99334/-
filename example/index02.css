@@ -1,132 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 a {
-    color:inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 li {
-    list-style:none;
+  list-style: none;
 }
 h1 {
-    flex-basis: 100px;
-    height: 40px;
-    line-height: 40px;
+  flex-basis: 100px;
+  height: 40px;
+  line-height: 40px;
 }
 
 body {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: absolute;
-    width: 100vw;
-    background-color: #fff;
-    padding: 0 20px;
-    top:0;
-    left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  width: 100vw;
+  background-color: #fff;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
 
-    z-index: 100;
-    max-height: 40px;
-    overflow: hidden;
-    transition: max-height 0.4s;
-    
+  z-index: 100;
+  max-height: 40px;
+  overflow: hidden;
+  transition: max-height 0.4s;
 }
 .sidewrpper {
-    display: flex;
-    align-items: center;
-    flex-basis: 100px;
-    height: 40px;
-    justify-content:flex-end;
+  display: flex;
+  align-items: center;
+  flex-basis: 100px;
+  height: 40px;
+  justify-content: flex-end;
 }
 .btnside {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* width:30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width:30px;
     height: 30px; 
     border: 3px solid black;
     border-radius: 50%;*/
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }  
-  .btnside:hover{
-    background-color: bisque;
-  }
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.btnside:hover {
+  background-color: bisque;
+}
 
 .btnside span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: black;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: black;
 }
 
-.btnside span:nth-child(2){
-    margin: 5px 0;
+.btnside span:nth-child(2) {
+  margin: 5px 0;
 }
 
-#gnbList{
-    display: flex;
-    justify-content: center;
-    
+#gnbList {
+  display: flex;
+  justify-content: center;
 }
-#gnbList li a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;;
-    width: 100px;
-    border:1px solid black;
+#gnbList li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
 }
-a{
-    width: 100%;
-    text-align: center;
+a {
+  width: 100%;
+  text-align: center;
 }
 #gnbList li a:hover {
-    background-color:#eeeeee;
-   
-
+  background-color: #eeeeee;
 }
-main{
-    padding: 50px 0;
-    background-color: bisque;
+main {
+  padding: 50px 0;
+  background-color: bisque;
 }
 .imgList {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
 }
 .imgList li {
-    width: 100px;
-    height:150px;
-    border: 1px solid black;
-    /* margin-right: 20px; */
+  width: 100px;
+  height: 150px;
+  /* margin-right: 20px; */
 }
 .imgList li + li {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .imgList li a {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
 }
 .imgList li a img {
-    height: 100%;
-    transition: 0.4s;
+  height: 100%;
+  transition: 0.4s;
 }
-.imgList li a:hover img{
-    height: 110%;
-    transform: scale(1.2);
+.imgList li a:hover img {
+  height: 110%;
+  transform: scale(1.2);
 }
 
 /* 800px보다 작으면 #gnbList 안보이게
@@ -137,22 +130,19 @@ main{
     }
 }
  */
- /* 800px 보다 작으면  #gnbList 안보이게*/
+/* 800px 보다 작으면  #gnbList 안보이게*/
 
-@media (max-width:800px){
-    #gnbList {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+@media (max-width: 800px) {
+  #gnbList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    
-    }
-    
-    header:hover {
-        max-height: 200px;
-    }
-    header .btnside{
-        display:flex;
-    }
+  header:hover {
+    max-height: 200px;
+  }
+  header .btnside {
+    display: flex;
+  }
 }
-

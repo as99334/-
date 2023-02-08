@@ -13,31 +13,31 @@
 let globalNum = 10;
 
 function addGlobalNum(a) {
-    return a + globalNum;
+  return a + globalNum;
 }
 // console.log(a); addGlobalNum의 매개 변수 a는 함수 내부에서 유효하기 때문에 밖에서 접근할 수 없다.
 
 console.log(addGlobalNum(3));
 
-function foo (){
-    let num = 10;
+function foo() {
+  let num = 10;
 
-    function bar (){
-        let num = 100;
-        console.log(num);
-    }
+  function bar() {
+    let num = 100;
+    console.log(num);
+  }
 }
 
 // var는 블록 스코프를 지원하지 않기 때문에 전역 변수를 선언한 것과 마찬가지
 var i = 20;
-for(var i = 0; i <10; i++) {}
+for (var i = 0; i < 10; i++) {}
 console.log(i);
 {
-    var i = 100;
+  var i = 100;
 }
 console.log(i);
 {
-    // let 키워드는 블로 스코프를 지원한다.
-    let b =100;
+  // let 키워드는 블로 스코프를 지원한다.
+  let b = 100;
 }
-let b =10;
+let b = 10;

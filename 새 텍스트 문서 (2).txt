@@ -1,0 +1,14 @@
+dir :현재 경로 내에 있는 디렉토리 및 파일 표시
+
+cd 경로 : 해당 경로로 이동
+
+./: 상위 폴더
+
+../:현재 폴더
+
+/: 루트 폴더
+
+d
+
+redux 설치
+ npm install react-redux @reduxjs/toolkit

@@ -14,64 +14,60 @@
 */
 
 let user = {
-    name: {
-      lastName: "Hwangbo",
-      firstName: "seok",
-    },
-    age: 31,
-    wight: 67,
-    "last-name": "hwangbo",
-  };
-  
-  console.log(user["last-name"]);
-  
-  // 객체 프로퍼티 참조 : 객체의 프로퍼티 값을 읽는다. 객체.프로퍼티 형식으로
-  console.log(user.name);
-  // 객체의 프로퍼티 값 변경
-  user.age = 32;
-  // 객체의 새로운 프로퍼티 할당 : 객체에 없는 프로퍼티에 값을 할당하면 새로운 프로퍼티가 생긴다.
-  user.height = 173;
-  console.log(user.height);
-  console.log(user["age"]);
-  
-  let arr = ["orange", "apple", "grape", "banana"];
-  console.log(arr[arr.length - 1]); // arr의 length 프로퍼티 참고. (array도 객체다.)
-  
-  console.log(user.name.firstName);
-  // console.log(user.color.bg) // undefined, null한테 프로퍼티를 참조하면 오류 발생!
-  console.log(user.color?.bg); // 옵셔널 체이닝. undefined거나 null 참조X.
+  name: {
+    lastName: "Hwangbo",
+    firstName: "seok",
+  },
+  age: 31,
+  wight: 67,
+  "last-name": "hwangbo",
+};
 
-  let dog = {
-    name :"coco",
-    age :11,
-    bow: function (sound) {
-        console.log(sound);
-    },
-  };
+console.log(user["last-name"]);
 
-  dog.bow("멍멍");
+// 객체 프로퍼티 참조 : 객체의 프로퍼티 값을 읽는다. 객체.프로퍼티 형식으로
+console.log(user.name);
+// 객체의 프로퍼티 값 변경
+user.age = 32;
+// 객체의 새로운 프로퍼티 할당 : 객체에 없는 프로퍼티에 값을 할당하면 새로운 프로퍼티가 생긴다.
+user.height = 173;
+console.log(user.height);
+console.log(user["age"]);
 
-  let user02 = {
-    name: "seok",
-    age:31,
-    hello :function() {
-       // console.log("안녕하세요 저는"+this.age +"세"+this.age+"세"+ this.name +"입니다.");
-       console.log("안녕하세요. 저는 %d세 %s 입니다", this.age, this.name);
-    },
-  };
-  user02.hello();
+let arr = ["orange", "apple", "grape", "banana"];
+console.log(arr[arr.length - 1]); // arr의 length 프로퍼티 참고. (array도 객체다.)
 
+console.log(user.name.firstName);
+// console.log(user.color.bg) // undefined, null한테 프로퍼티를 참조하면 오류 발생!
+console.log(user.color?.bg); // 옵셔널 체이닝. undefined거나 null 참조X.
 
-  // rect라는 사각형 객체 만들기. width(너비), heigth(높이) 프로퍼티, 넓기 구하는 매서드 만들기
+let dog = {
+  name: "coco",
+  age: 11,
+  bow: function (sound) {
+    console.log(sound);
+  },
+};
 
-  let rect =  {
-    width: 100,
-    height:100,
-    getArea :function(){
-        return this.width * this.height;
-    },
-  };
-  console.log(rect.getArea());
+dog.bow("멍멍");
 
+let user02 = {
+  name: "seok",
+  age: 31,
+  hello: function () {
+    // console.log("안녕하세요 저는"+this.age +"세"+this.age+"세"+ this.name +"입니다.");
+    console.log("안녕하세요. 저는 %d세 %s 입니다", this.age, this.name);
+  },
+};
+user02.hello();
 
-  
+// rect라는 사각형 객체 만들기. width(너비), heigth(높이) 프로퍼티, 넓기 구하는 매서드 만들기
+
+let rect = {
+  width: 100,
+  height: 100,
+  getArea: function () {
+    return this.width * this.height;
+  },
+};
+console.log(rect.getArea());

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled, { css } from "styled-components";
 import React from "react";
 
@@ -14,9 +14,12 @@ function TitleBox({ title, filter, fetchData }) {
           : { ...filter, active: false }
       )
     );
+  };
+
+  useEffect(() => {
     const { url } = filterList.find((filter) => filter.active);
     fetchData(url);
-  };
+  }, [filterList, fetchData]);
 
   return (
     <Container>

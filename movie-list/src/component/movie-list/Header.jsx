@@ -5,37 +5,38 @@ function Header() {
   return (
     <Container>
       <Wrapper>
-        <h1>
-          <Link to="/">Nepp Movie</Link>
-        </h1>
-        <NavBar>
-          <GnbList>
-            <li>
-              <Link to="movie">영화</Link>
-            </li>
-            <li>
-              <Link to="tv">TV프로그램</Link>
-            </li>
-            <li>
-              <Link to="person">인물</Link>
-            </li>
-          </GnbList>
-        </NavBar>
+        <Link to="/">Nepp Movie</Link>
+        <LeftBox>
+          <NavBar>
+            <GnbList>
+              <li>
+                <Link to="movie">영화</Link>
+              </li>
+              <li>
+                <Link to="tv">TV프로그램</Link>
+              </li>
+              <li>
+                <Link to="person">인물</Link>
+              </li>
+            </GnbList>
+          </NavBar>
+        </LeftBox>
       </Wrapper>
     </Container>
   );
 }
 
 const Container = styled.div`
-  background-color: #ddd;
+  border-bottom: 1px solid #eee;
 `;
 
 const Wrapper = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 900px;
 
   margin: 0 auto;
-  background-color: #eee;
   h1 {
     line-height: 60px;
   }
@@ -43,6 +44,9 @@ const Wrapper = styled.div`
 
 const NavBar = styled.nav`
   margin-left: 30px;
+`;
+const LeftBox = styled.div`
+  display: flex;
 `;
 
 const GnbList = styled.ul`

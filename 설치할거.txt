@@ -1,0 +1,15 @@
+npm install 
+styled-components 스타일 설치
+axios 
+react-router-dom
+react-redux 
+@reduxjs/toolkit polished
+
+
+npm install axios react-router-dom react-redux @reduxjs/toolkit polished
+axios 
+
+npm instal 
+
+
+101.101.218.43/docs

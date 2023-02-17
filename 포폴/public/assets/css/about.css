@@ -26,14 +26,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "GangwonEduPowerExtraBoldA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 #about header {
   display: flex;
   justify-content: center;
@@ -163,7 +155,15 @@
 .hidden {
   display: none;
 }
-
+.modalBox h2 {
+  font-family: "MICEGothic Bold";
+  text-align: center;
+  font-size: 1.5rem;
+}
+.modalBox p {
+  font-size: 1.2rem;
+  font-family: "GangwonEduPowerExtraBoldA";
+}
 #aboutBox i {
   color: #ff8787;
   display: flex;

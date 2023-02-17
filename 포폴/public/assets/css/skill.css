@@ -26,50 +26,48 @@
   font-style: normal;
 }
 
-#about header {
+#skill {
+  background: url(./배경/img4.jpg);
+  width: 1522.4;
+}
+
+#skill header {
   display: flex;
   justify-content: center;
   font-family: "GangwonEduPowerExtraBoldA";
   font-size: 2rem;
   box-sizing: border-box;
-
-  padding-top: 50px;
+  padding-top: 40px;
 }
-#about header h2 {
+
+#skill ul {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+#skill ul li {
+  padding-right: 40px;
+}
+
+#skill ul li img:hover {
+  transform: scale(1.1);
+  transition: 1.5s;
+}
+#skill ul li p {
+  padding-top: 30px;
   text-align: center;
-  color: #20262e;
-}
-
-#aboutBox {
-  height: 520px;
-  background-color: rgba(168, 166, 166, 0.671);
-}
-
-#about ul {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-#about ul i {
-  color: #ff8787;
-  margin-right: 30px;
-  margin-bottom: 50px;
-}
-#about ul li {
-  display: flex;
-}
-#about ul li p {
-  margin-right: 190px;
-  font-family: "MICEGothic Bold";
-  font-size: 0.9rem;
-  line-height: 22px;
-}
-#about ul li strong {
-  font-family: Humanbumsuk;
+  font-family: "GangwonEduPowerExtraBoldA";
   font-size: 1.5rem;
+  font-weight: 900;
 }
-#aboutBox i {
-  color: #ff8787;
+#skill i {
   display: flex;
   justify-content: center;
+  color: #ff8787;
+  padding-bottom: 40px;
+}
+#skill i:hover {
+  color: #ffd4d4;
+  transition: 2s;
 }

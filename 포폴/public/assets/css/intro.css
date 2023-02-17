@@ -18,8 +18,8 @@
   height: 100px;
 }
 #home img {
-  width: 1730px;
-  height: 890px;
+  width: 100%;
+  height: 980px;
 }
 #home header {
   display: flex;
@@ -45,6 +45,8 @@
   font-family: "MonoplexKR-Regular";
   color: #20262e;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 600px;
 }
@@ -54,8 +56,9 @@
 
 #home .content header footer {
   position: absolute;
-  top: 650px;
-  left: 790px;
+  top: 800px;
+  display: flex;
+  justify-content: center;
 }
 #home .content header footer i {
   color: #ff8787;
